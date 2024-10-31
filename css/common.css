@@ -1,26 +1,97 @@
-* {
+.centered {
    text-align: center;
 }
 
-.center {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
+body  {
+   font-family: "Open Sans", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 300;
+   font-style: normal;
+   font-variation-settings: "wdth" 100;
 }
-
-.full-height {
-    height: 100lvh;
-}
-
-/* Font families */
-
-/*h1, h2, h3, h4, h5, h6 {*/
-/*   font-family: 'Luminari';*/
-/*   color: green;*/
-/*}*/
 
 h1, h2, h3, h4, h5, h6 {
    font-family: "Cookie", cursive;
    font-weight: 400;
    font-style: normal;
+}
+
+.important {
+   font-weight: 500;
+}
+.less-important {
+   font-weight: 400;
+}
+
+.relative {
+   position: relative;
+   text-align: center;
+   overflow: hidden; /* hides extra parts of image */
+   max-height: 600px; /* max height */
+}
+
+.center-img {
+   /*max-width: 100%;*/
+   /*height: auto;*/
+
+   width: 100%;
+   height: 100%; /* sets height = 100% of the container */
+   object-fit: contain; /* will make sure image covers the area and is cropped */
+
+   /*display: block;*/
+   /*margin-left: auto;*/
+   /*margin-right: auto;*/
+   /*padding-top: 25lvh;*/
+   /*padding-bottom: 25lvh;*/
+}
+
+.italian {
+   color: rgba(0, 0, 0, 0.9);
+}
+
+.english {
+   color: rgba(0, 0, 0, 0.9);
+}
+
+.full-height {
+   width: 100lvw;
+   height: 100lvh;
+}
+.full-height-80 {
+   height: 85lvh;
+   overflow: hidden;
+}
+.full-height-20 {
+   height: 15lvh;
+   overflow: hidden;
+}
+.pblock {
+   margin-bottom: 0;
+}
+
+.programma {
+   margin-top: 40px;
+}
+.schedule {
+   margin-top: 20px;
+}
+.macchina {
+   margin-top: 20px;
+}
+.cascina {
+   margin-top: 20px;
+}
+.conferma {
+   margin-top: 20px;
+}
+.regalo {
+   margin-top: 20px;
+}
+
+.little-image {
+   /*border-radius: 50%;*/
+   /*width: 200px;*/
+   /*height: 200px;*/
+   margin: 0 auto;
+   display: block;
 }
