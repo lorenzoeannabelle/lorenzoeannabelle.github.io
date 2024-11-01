@@ -67,11 +67,11 @@ footer {
    height: 100lvh;
 }
 .full-height-80 {
-   height: 85lvh;
+   height: 80lvh;
    overflow: hidden;
 }
 .full-height-20 {
-   height: 15lvh;
+   height: 20lvh;
    overflow: hidden;
 }
 .pblock {
