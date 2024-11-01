@@ -1,6 +1,3 @@
-.centered {
-   text-align: center;
-}
 
 body  {
    font-family: "Open Sans", sans-serif;
@@ -24,6 +21,14 @@ h1, h2, h3, h4, h5, h6 {
 footer {
    margin: 30px 0;
 }
+
+.main-container {
+   padding: 0;
+}
+
+.centered {
+    text-align: center;
+ }
 
 .important {
    font-weight: 500;
@@ -107,6 +112,43 @@ footer {
 }
 .justified {
    text-align: justify;
+}
+.schedule-list li {
+    margin-bottom: 10px;
+}
+.preface-container {
+   margin-bottom: 50px;
+}
+.iban-msg{
+    margin-top: 40px;
+}
+.programma-container {
+   /*padding: 0 300px;*/
+   width: 100lvw;
+   margin:0;
+   padding: 2lvw 9lvw;
+   /*background: white;*/
+   background-size: cover;
+   /*box-shadow: 0px -1px 20px 4px #cccccc;*/
+}
+.macchina-container {
+   /*padding: 0 300px;*/
+   width: 100lvw;
+   margin: 0;
+   padding: 2lvw 9lvw;
+   /*background: #f0f0f0FF;*/
+   background-size: cover;
+   /*box-shadow: 0px 0px 6px 6px #cccccc inset;*/
+   z-index: 9999;
+}
+.conferma-container {
+   /*padding: 0 300px;*/
+   width: 100lvw;
+   margin:0;
+   padding: 2lvw 9lvw;
+   background: white;
+   background-size: cover;
+   /*box-shadow: 0px 1px 20px 4px #cccccc*/
 }
 
 .little-image {
