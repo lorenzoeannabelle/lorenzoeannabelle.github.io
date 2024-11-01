@@ -16,6 +16,10 @@ h1, h2, h3, h4, h5, h6 {
    font-style: normal;
 }
 
+footer {
+   margin: 30px 0;
+}
+
 .important {
    font-weight: 500;
 }
@@ -85,13 +89,26 @@ h1, h2, h3, h4, h5, h6 {
    margin-top: 20px;
 }
 .regalo {
+   margin-top: 40px;
+}
+.regalo-title {
    margin-top: 20px;
+}
+.location {
+   margin-top: 35px;
+}
+.limited {
+   max-height: 450px;
+}
+.justified {
+   text-align: justify;
 }
 
 .little-image {
    /*border-radius: 50%;*/
    /*width: 200px;*/
    /*height: 200px;*/
+   max-width: 250px;
    margin: 0 auto;
    display: block;
 }
