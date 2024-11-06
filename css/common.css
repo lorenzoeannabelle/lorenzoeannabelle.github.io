@@ -59,6 +59,20 @@ footer {
    /*padding-bottom: 25lvh;*/
 }
 
+.space-above {
+   margin-bottom: 20px;
+   position: relative;
+}
+.space-below {
+   position: absolute;
+   margin: auto;
+   top: 50%;
+   left: 10%;
+   right: 10%;
+   -ms-transform: translateY(-50%);
+   transform: translateY(-50%);
+}
+
 .italian {
    color: rgba(0, 0, 0, 0.9);
 }
@@ -91,6 +105,8 @@ footer {
 }
 .macchina {
    margin-top: 20px;
+   overflow: visible;
+   overflow-wrap: break-word;
 }
 .cascina {
    margin-top: 20px;
