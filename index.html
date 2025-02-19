@@ -1,249 +1,521 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Ci Sposiamo!!!</title>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ci Sposiamo!!!</title>
 
-        <!--    Bootstrap Stylesheet inclusion    -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="css/common.css">
-        <link rel="icon" type="image/x-icon" href="images/heart.png">
+    <!--    Bootstrap Stylesheet inclusion    -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/parallax.css">
+    <link rel="stylesheet" type="text/css" href="css/animation.css">
+    <link rel="icon" type="image/x-icon" href="images/heart.png">
 
-        <!--    Cookie Font    -->
-        <!--    Open Sans Font    -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    </head>
+    <!--    Cookie Font    -->
+    <!--    Open Sans Font    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
 
-    <body>
-        <div class="container-fluid main-container">
-            <div class="container full-height-80">
-                <img class="center-img" src="images/drawing.png">
-            </div>
-            <div class="container space-above centered full-height-20">
-                <div class="space-below">
-                    <h1>Ci sposiamo!!!</h1>
-                    <p class="pblock less-important italian">
-                        Ti aspettiamo il 10 maggio 2025
-                    </p>
-                    <p class="english">
-                        We look forward to seeing you on May 10, 2025
-                    </p>
+<body data-lang="it">
+<div class="lang-switch">
+    <button id="btn-it" class="lang-btn active" data-lang="it">🇮🇹</button>
+    <button id="btn-en" class="lang-btn" data-lang="en">🇬🇧</button>
+    <button id="btn-nl" class="lang-btn" data-lang="nl">🇳🇱</button>
+</div>
+<div class="parallax">
+    <section id="intro" class="parallax__group intro_screen">
+        <div class="parallax__layer parallax__layer-base">
+            <div class="container full-height">
+                <div class="container full-height-80">
+                    <img class="center-img" src="images/drawing.png">
+                </div>
+                <div class="container space-above centered full-height-20">
+                    <div class="space-below">
+                        <h1 class="lang" data-lang="it">Ci sposiamo!!!</h1>
+                        <h1 class="lang" data-lang="en">We're getting married!!!</h1>
+                        <h1 class="lang" data-lang="nl">We gaan trouwen!!!</h1>
+                        <p class="pblock lang" data-lang="it">
+                            Ti aspettiamo il 10 maggio 2025
+                        </p>
+                        <p class="pblock lang" data-lang="en">
+                            See you on May 10th 2025
+                        </p>
+                        <p class="pblock lang" data-lang="nl">
+                            Tot ziens op 10 mei 2025
+                        </p>
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <section id="group-1" class="parallax__group">
+        <div class="parallax__layer parallax__layer-custom-back">
             <div class="container centered preface-container">
-                <br>
-                <p class="pblock less-important italian">
+                <p class="pblock lang important" data-lang="it">
                     Ciaoooo, scorrendo la pagina dovresti trovare tutte le informazioni che ti servono, altrimenti chiamaci!!
                 </p>
-                <p class="english">
-                    Hiiii, scrolling down the page you should find all the necessary information, but if you need anything give use a call!                </p>
-                <br>
-                <p class="centered">
+                <p class="lang less-important" data-lang="it">
                     (nce’ scusamm ppe a’ mancata traduzion in napulitan powered by <a href="https://www.giggino.com/nap.php" target="_blank" rel="noopener noreferrer">Giggino</a>)
                 </p>
+                <p class="pblock lang important" data-lang="en">
+                    Hello, scrolling down you'll find all the information you need, otherwise call us!!
+                </p>
+                <p class="pblock lang important" data-lang="nl">
+                    Hallo! Als je naar beneden scrolt, vind je alle informatie die je nodig hebt. Zo niet, bel ons dan!!
+                </p>
             </div>
-            <div class="container-fluid programma programma-container">
+        </div>
+        <div class="parallax__layer parallax__layer-mid-foreground">
+            <!--            <div class="container centered full-height video-section">-->
+            <div class="container centered video-section">
+                <div class="container video-preface">
+<!--                    <h2 class="pblock lang" data-lang="it">Per chi sarà alla cerimonia, ci farebbe piacere cantare insieme questa canzone speciale!</h2>-->
+                    <p class="pblock lang" data-lang="it">Per chi sarà alla cerimonia, ci farebbe piacere cantare insieme questa canzone speciale!</p>
+                    <p class="lang" data-lang="en">For those attending the ceremony, we would love to sing together this special song!</p>
+                    <p class="lang" data-lang="nl">Voor degenen die bij de ceremonie aanwezig zijn, zouden we het geweldig vinden om samen dit speciale lied te zingen!</p>
+                    <h4 class="lang" data-lang="it">
+                        Testo - <a href="https://www.musixmatch.com/lyrics/Louis-Armstrong-and-His-Orchestra/What-a-Wonderful-World" target="_blank" rel="noopener noreferrer">What A Wonderful World</a> <i>di Louis Armstrong</i>
+                    </h4>
+                    <h4 class="lang" data-lang="en">
+                        Lyrics - <a href="https://www.musixmatch.com/lyrics/Louis-Armstrong-and-His-Orchestra/What-a-Wonderful-World" target="_blank" rel="noopener noreferrer">What A Wonderful World</a> <i>by Louis Armstrong</i>
+                    </h4>
+                    <h4 class="lang" data-lang="nl">
+                        Songtekst - <a href="https://www.musixmatch.com/lyrics/Louis-Armstrong-and-His-Orchestra/What-a-Wonderful-World" target="_blank" rel="noopener noreferrer">What A Wonderful World</a> <i>van Louis Armstrong</i>
+                    </h4>
+                </div>
+                <div class="container video-container">
+                    <iframe src="https://www.youtube.com/embed/A3yCcXgbKrE?si=MJa9g0P-gfBwzkTh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="parallax__layer parallax__layer-deep-back">
+        </div>
+    </section>
+    <section id="group-2" class="parallax__group">
+        <div class="parallax__layer parallax__layer-top">
+            <div class="container-fluid programma-container">
                 <div class="row align-items-center">
-<!--                    <h1>-->
-<!--                        Programma-->
-<!--                    </h1>-->
                     <div class="col-lg-5">
-<!--                        <h3>-->
-<!--                            Schedule-->
-<!--                        </h3>-->
                         <div>
                             <img class="center-img" src="images/annelor.webp">
                         </div>
                     </div>
                     <div class="offset-lg-1 col-lg-6 schedule">
-<!--                        <div class="row align-items-center">-->
-<!--                            <div class="col-3 col-md-2 col-lg-1">-->
-                                <h1>
-                                    Programma - Schedule
-                                </h1>
-<!--                            </div>-->
-<!--                            <div class="col-1 col-md-2 col-lg-1">-->
-<!--                                <h3>-->
-<!--                                    Schedule-->
-<!--                                </h3>-->
-<!--                            </div>-->
-<!--                        </div>-->
+                        <h1 class="lang" data-lang="it">Programma</h1>
+                        <h1 class="lang" data-lang="en">Schedule</h1>
+                        <h1 class="lang" data-lang="nl">Programma</h1>
                         <ul class="schedule-list">
                             <li>
-                                <b>Ore 11:00</b> <span class="less-important">Cerimonia presso sala consiliare Piazza Rovere 11 Castagneto Po (TO)</span>
-                                <br>
-                                <i><b>11:00 am</b> Ceremony at Piazza Rovere 11 Castagneto Po (TO)</i>
+                                <b class="lang" data-lang="it">Ore 11:00 - </b>
+                                <b class="lang" data-lang="en">11:00 AM - </b>
+                                <b class="lang" data-lang="nl">11:00 uur - </b>
+                                <span class="lang" data-lang="it">Cerimonia presso sala consiliare Piazza Rovere 11 Castagneto Po (TO)</span>
+                                <span class="lang" data-lang="en">Ceremony at the Council Hall on Piazza Rovere 11 Castagneto Po (TO)</span>
+                                <span class="lang" data-lang="nl">Ceremonie in het Gemeentehuis op Piazza Rovere 11, Castagneto Po (TO)</span>
                             </li>
                             <li>
-                                <b>Ore 13:30</b> <span class="less-important">Pranzo intimo presso Cascina Caccia a San Sebastiano Da Po (TO)</span>
-                                <br>
-                                <i><b>01:30 pm</b> Lunch at Cascina Caccia in San Sebastiano Da Po (TO)</i>
+                                <b class="lang" data-lang="it">Ore 13:30 - </b>
+                                <b class="lang" data-lang="en">1:30 PM - </b>
+                                <b class="lang" data-lang="nl">13:30 uur - </b>
+                                <span class="lang" data-lang="it">Pranzo intimo presso Cascina Caccia a San Sebastiano Da Po (TO)</span>
+                                <span class="lang" data-lang="en">Intimate lunch at Cascina Caccia in San Sebastiano Da Po (TO)</span>
+                                <span class="lang" data-lang="nl">Intieme lunch bij Cascina Caccia in San Sebastiano Da Po (TO)</span>
                             </li>
                             <li>
-                                <b>Ore 17:00</b> <span class="less-important">Festa con tutti! Taglio della torta, giochini, sorpresine, brindisi, pizza e poi dj fino a mezzanotte, presso Cascina Caccia a San Sebastiano Da Po (TO)</span>
-                                <br>
-                                <i><b>05:00 pm</b> Party with everyone! Cake cutting, games, surprises, toasts, pizza and then DJ until midnight, at Cascina Caccia in San Sebastiano Da Po (TO)</i>
+                                <b class="lang" data-lang="it">Ore 17:00 - </b>
+                                <b class="lang" data-lang="en">5:00 PM - </b>
+                                <b class="lang" data-lang="nl">17:00 uur - </b>
+                                <span class="lang" data-lang="it">
+                                    Festa con tutti! Taglio della torta, giochini, sorpresine, brindisi, pizza e poi dj fino a mezzanotte, presso Cascina Caccia a San Sebastiano Da Po (TO)
+                                </span>
+                                <span class="lang" data-lang="en">
+                                    Party for everyone! Cake cutting, games, surprises, toast, pizza and then DJ until midnight, at Cascina Caccia in San Sebastiano Da Po (TO)
+                                </span>
+                                <span class="lang" data-lang="nl">
+                                    Feest voor iedereen! Taart aansnijden, spelletjes, verrassingen, toast, pizza en daarna DJ tot middernacht, bij Cascina Caccia in San Sebastiano Da Po (TO)
+                                </span>
                             </li>
                         </ul>
-<!--                        <p class="pblock important">-->
-<!--                            <b>Ore 11:00</b> Cerimonia presso sala consiliare Piazza Rovere 11 Castagneto Po (TO)-->
-<!--                        </p>-->
-<!--                        <p class="english less-important">-->
-<!--                            <i><b>11:00 am</b> Ceremony at Piazza Rovere 11 Castagneto Po (TO)</i>-->
-<!--                        </p>-->
-<!--                        <p class="pblock important">-->
-<!--                            <b>Ore 13:30</b> Pranzo intimo presso Cascina Caccia a San Sebastiano Da Po (TO)-->
-<!--                        </p>-->
-<!--                        <p class="english less-important">-->
-<!--                            <i><b>01:30 pm</b> Lunch at Cascina Caccia in San Sebastiano Da Po (TO)</i>-->
-<!--                        </p>-->
-<!--                        <p class="pblock important">-->
-<!--                            <b>Ore 17:00</b> Festa con tutti! Taglio della torta, giochini, sorpresine, brindisi, pizza e poi dj fino a mezzanotte, presso Cascina Caccia a San Sebastiano Da Po (TO)-->
-<!--                        </p>-->
-<!--                        <p class="english less-important">-->
-<!--                            <i><b>05:00 pm</b> Party with everyone! Cake cutting, games, surprises, toasts, pizza and then DJ until midnight, at Cascina Caccia in San Sebastiano Da Po (TO)</i>-->
-<!--                        </p>-->
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="parallax__layer parallax__layer-mid-foreground">
             <div class="container-fluid macchina-container">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 macchina">
-                            <h3 class="pblock">Attenzione!! Dove lasciare la macchina:</h3>
-                            <p class="less-important">
-                                Se non trovate posto proprio in piazza a Castagneto, c’è anche un parcheggio qui <a href="https://maps.app.goo.gl/DFKCcxdmoRsPiV6P6" target="_blank" rel="noopener noreferrer">https://maps.app.goo.gl/DFKCcxdmoRsPiV6P6</a>
-                            </p>
-
-                            <h3 class="pblock english">Parcheggio per la Cascina:</h3>
-                            <p class="pblock less-important italian">
-                                <a href="https://maps.app.goo.gl/7kepKMD3EY1FUkZt8" target="_blank" rel="noopener noreferrer">https://maps.app.goo.gl/7kepKMD3EY1FUkZt8</a>
-                                <br>
-                                Ci sarà una navetta pronta a recuperarvi e portarvi su e giù!:)
-                            </p>
-                        </div>
-                        <div class="col-md-6 macchina">
-                            <h3 class="pblock english">Where to leave the car during the Ceremony:</h3>
-                            <p class="english">
-                                If you don’t find a place in the main square of Castagneto, there is also a parking lot here <a href="https://maps.app.goo.gl/DFKCcxdmoRsPiV6P6" target="_blank" rel="noopener noreferrer">https://maps.app.goo.gl/DFKCcxdmoRsPiV6P6</a>
-                            </p>
-                            <h3 class="pblock english">Parking for the Cascina:</h3>
-                            <p class="english">
-                                <a href="https://maps.app.goo.gl/7kepKMD3EY1FUkZt8" target="_blank" rel="noopener noreferrer">https://maps.app.goo.gl/7kepKMD3EY1FUkZt8</a>
-                                <br>
-                                A shuttle service will be available to take you to and from the venue :)
-                            </p>
-                        </div>
+                <h2 class="lang" data-lang="it">Attenzione!! Dove parcheggiare!</h2>
+                <h2 class="lang" data-lang="en">Attention!! Where to park!</h2>
+                <h2 class="lang" data-lang="nl">Let op!! Waar te parkeren!</h2>
+                <div class="row">
+                    <div class="offset-md-1 col-md-5">
+                        <h4 class="lang" data-lang="it">Parcheggio per la Cerimonia:</h4>
+                        <h4 class="lang" data-lang="en">Parking for the Ceremony:</h4>
+                        <h4 class="lang" data-lang="nl">Parkeren bij de Ceremonie:</h4>
+                        <p class="lang" data-lang="it">
+                            Se non trovate posto proprio in piazza a Castagneto, c’è anche un parcheggio qui:
+                            <br>
+                            <a href="https://maps.app.goo.gl/DFKCcxdmoRsPiV6P6" target="_blank" rel="noopener noreferrer">https://maps.app.goo.gl/DFKCcxdmoRsPiV6P6</a>
+                        </p>
+                        <p class="lang" data-lang="en">
+                            If you can't find a spot right in Castagneto main square, there's also a parking lot here:
+                            <br>
+                            <a href="https://maps.app.goo.gl/DFKCcxdmoRsPiV6P6" target="_blank" rel="noopener noreferrer">https://maps.app.goo.gl/DFKCcxdmoRsPiV6P6</a>
+                        </p>
+                        <p class="lang" data-lang="nl">
+                            Als je geen parkeerplek vindt op het centrale plein van Castagneto, is er ook een parkeerplaats hier:
+                            <br>
+                            <a href="https://maps.app.goo.gl/DFKCcxdmoRsPiV6P6" target="_blank" rel="noopener noreferrer">https://maps.app.goo.gl/DFKCcxdmoRsPiV6P6</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="lang" data-lang="it">Parcheggio per la Cascina:</h4>
+                        <h4 class="lang" data-lang="en">Parking for the Cascina:</h4>
+                        <h4 class="lang" data-lang="nl">Parkeren bij de Cascina:</h4>
+                        <p class="lang" data-lang="it">
+                            Ci sarà una navetta pronta a recuperarvi e portarvi su e giù! :)
+                            <br>
+                            <a href="https://maps.app.goo.gl/7kepKMD3EY1FUkZt8" target="_blank" rel="noopener noreferrer">https://maps.app.goo.gl/7kepKMD3EY1FUkZt8</a>
+                        </p>
+                        <p class="lang" data-lang="en">
+                            A shuttle will be available to pick you up and take you back and forth! :)
+                            <br>
+                            <a href="https://maps.app.goo.gl/7kepKMD3EY1FUkZt8" target="_blank" rel="noopener noreferrer">https://maps.app.goo.gl/7kepKMD3EY1FUkZt8</a>
+                        </p>
+                        <p class="lang" data-lang="nl">
+                            Er zal een pendeldienst beschikbaar zijn om je op te halen en heen en weer te brengen! :)
+                            <br>
+                            <a href="https://maps.app.goo.gl/7kepKMD3EY1FUkZt8" target="_blank" rel="noopener noreferrer">https://maps.app.goo.gl/7kepKMD3EY1FUkZt8</a>
+                        </p>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="parallax__layer parallax__layer-back">
             <div class="container-fluid conferma-container">
                 <div class="container">
                     <div class="row conferma align-items-center">
                         <div class="col-md-5">
-                            <h1 class="pblock">Facci sapere se ci sarai!</h1>
-                            <h3>Let us know if you’ll be there!</h3>
+                            <h1 class="lang" data-lang="it">Facci sapere se ci sarai!</h1>
+                            <h1 class="lang" data-lang="en">Let us know if you'll be there!</h1>
+                            <h1 class="lang" data-lang="nl">Laat ons weten of je erbij bent!</h1>
                         </div>
                         <div class="offset-md-1 col-md-6">
-                            <p class="pblock less-important italian">
-                                Compila il google form per darci conferma della tua partecipazione e farci sapere tutte le tue esigenze!
+                            <p class="lang" data-lang="it">
+                                Compila il Google form per darci conferma della tua partecipazione e farci sapere tutte le tue esigenze!
                             </p>
-                            <p class="english">
-                                Fill out the google form to confirm your participation and let us know all your needs!
+                            <p class="lang" data-lang="en">
+                                Fill out the Google form to confirm your attendance and let us know any requirements!
+                            </p>
+                            <p class="lang" data-lang="nl">
+                                Vul het Google-formulier in om je aanwezigheid te bevestigen en eventuele wensen door te geven!
                             </p>
                         </div>
-                        <a href="https://forms.gle/rsTqrnBwjFWSq3PE7" target="_blank" rel="noopener noreferrer">
-                            <button type="button" class="btn btn-primary col-12 offset-md-6 col-md-6 offset-lg-7 col-lg-4">Google form</button>
-                        </a>
+                        <button id="confirm-btn" type="button"
+                                class="btn-wedding btn col-12 offset-md-6 col-md-6 offset-lg-7 col-lg-4">
+                            RSVP
+                        </button>
                     </div>
                 </div>
             </div>
-            <div class="container regalo-container">
-                <div class="row">
-                </div>
-                <div class="row regalo d-flex align-items-center">
-<!--                    <hr>-->
-                    <div class="col-md-4">
-                        <div class="little-image">
-                            <img class="center-img"  src="images/little_gift.png">
-                        </div>
-                    </div>
-                    <div class="col-md-8 regalo-title">
-<!--                        <h1 class="pblock less-important italian">Se vuoi farci un regalo… sostienici! 😜</h1>-->
-<!--                        <h3 class="pblock less-important italian">If you want to make us a gift… support us!</h3>-->
-                        <h1 class="pblock centered">Se vuoi farci un regalo… sostienici! 😜</h1>
-                        <h2 class="centered">If you'd like to give us a gift, your support would mean a lot!</h2>
-
-                        <p class="centered less-important italian iban-msg">IBAN
-                            <br>
-                            Lorenzo Villano
-                            <br>
-                            IT39Z0306903516100000064118
-                        </p>
-                    </div>
-                    <div class="col-12 offset-md-2 col-md-8">
-                    </div>
-                </div>
-                <hr>
-                <div class="row location">
-                    <h1 class="centered"> Location</h1>
-                    <img class="center-img limited" src="images/casanostra.webp">
-                    <h3 class="centered">Cascina Caccia</h3>
-                    <div class="col-md-6">
-                        <p class="justified italian">
-                            La storia di Cascina Caccia è una testimonianza di vittoria contro la criminalità organizzata. Dopo la confisca definitiva nel 2007, la cascina, precedentemente appartenente alla famiglia mafiosa Belfiore, è stata liberata e destinata a uso sociale. Questo bene è diventato un simbolo della lotta alle mafie nel Nord Italia, dedicato alla memoria di Bruno Caccia, Procuratore di Torino ucciso nel 1983 per ordine di Domenico Belfiore, capo della ‘ndrangheta locale.
-                        </p>
-                        <p class="justified important italian">
-                            Abbiamo scelto di festeggiare il nostro matrimonio qui, non solo per sostenere le azioni sociali che la cascina porta avanti, ma anche perchè sentiamo che questo luogo ci rappresenta: a cascina caccia si fanno molte attività educative per avvicinare i giovani all’amore per la natura e ai valori di giustizia e libertà, valori che abbiamo condiviso negli scout CNGEI, dove ci siamo conosciuti.
-                        </p>
-                        <p class="justified italian">
-                            E poi si trova tra le colline in cui abbiamo scelto di costruire la nostra vita insieme!
-                        </p>
-                    </div>
-                    <div class="col-md-6">
-                        <p class="justified english">
-                            The history of Cascina Caccia is a testimony of victory against organized crime. After the final confiscation in 2007, the farmhouse, previously belonging to the Belfiore mafia family, was freed and destined for social use. This property has become a symbol of the fight against the mafia in Northern Italy, dedicated to the memory of Bruno Caccia, the Turin prosecutor killed in 1983 on the orders of Domenico Belfiore, head of the local ‘ndrangheta.
-                        </p>
-                        <p class="justified important english">
-                            We chose to celebrate our wedding here, not only to support the social actions that the farmhouse carries out, but also because we feel that this place represents us: at Cascina Caccia many educational activities are carried out to bring young people closer to the love of nature and the values ​​of justice and freedom, values ​​that we shared in the CNGEI scouts, where we met.
-                        </p>
-                        <p class="justified english">
-                            And then it is located among the hills where we chose to build our life together!
-                        </p>
-                    </div>
-                    <a href="https://cascinacaccia.net/" target="_blank" rel="noopener noreferrer">
-                        <button type="button" class="btn btn-primary col-12 offset-md-4 col-md-4 offset-lg-5 col-lg-2">Discover Cascina Caccia</button>
-                    </a>
-                </div>
-            </div>
-
-
-            <hr>
-
-            <footer class="centered">
-<!--                <p>-->
-<!--                    <a href="https://www.instagram.com/loreeannabelle/">Instagram</a>-->
-<!--                    <a href="https://www.facebook.com/loreeannabelle">Facebook</a>-->
-<!--                    <a href="https://www.youtube.com/channel/UC9J9Z9J9J9J9J9J9J9J9J9J9">Youtube</a>-->
-<!--                <p>-->
-
-                <p class="pblock less-important">
-                    Che bello!!! Non vediamo l’ora di festeggiare con voi!!! Grazie di tutto!!
-                </p>
-                <p class="less-important">
-                    Wat mooi!!! Wij kunnen niet wachten om het met jullie te vieren!!! Bedankt voor alles!!
-                </p>
-            </footer>
         </div>
+    </section>
+    <section id="group-3" class="parallax__group">
+        <div class="parallax__layer parallax__layer-base">
+            <div class="container-fluid regalo-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="offset-md-2 col-md-9 offset-md-1">
+                            <div class="container">
+                                <div class="row regalo d-flex align-items-center">
+                                    <div class="col-lg-4">
+                                        <div class="little-image">
+                                            <img class="center-img"  src="images/little_gift.png">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8 centered regalo-title">
+                                        <h2 class="lang" data-lang="it">Se vuoi farci un regalo...</h2>
+                                        <h2 class="lang" data-lang="en">If you'd like to give us a gift...</h2>
+                                        <h2 class="lang" data-lang="nl">Als je ons een cadeau wilt geven...</h2>
+                                        <p class="centered iban-msg">IBAN
+                                            <br>
+                                            Villano Lorenzo
+                                            <br>
+                                            IT39Z0306903516100000064118
+                                            <br>
+                                            Banca Intesa Sanpaolo
+                                            <br>
+                                            BIC/SWIFT: BCITITMM
+                                        </p>
+                                        <h2 class="iban-msg lang" data-lang="it">...sostienici! 😜</h2>
+                                        <h2 class="iban-msg lang" data-lang="en">...support us! 😜</h2>
+                                        <h2 class="iban-msg lang" data-lang="nl">...steun ons! 😜</h2>
+                                    </div>
+                                    <div class="col-12 offset-md-2 col-md-8">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="parallax__layer parallax__layer-top">
+        </div>
+    </section>
+    <section id="group-4" class="parallax__group">
+        <div class="parallax__layer parallax__layer-mid-back">
+            <div class="container location-container">
+                <div class="row location">
+                    <h1 class="lang centered" data-lang="it">La Location</h1>
+                    <h1 class="lang centered" data-lang="en">The Venue</h1>
+                    <h1 class="lang centered" data-lang="nl">De Locatie</h1>
+                    <img class="center-img limited" src="images/casanostra.webp">
+                    <div class="col-10 col-md-12 col-lg-10 cascina-container container">
+                        <div class="text-cascina">
+                            <h3 class="centered">Cascina Caccia</h3>
+                            <p class="lang justified" data-lang="it">
+                                La storia di Cascina Caccia è una testimonianza di vittoria contro la criminalità organizzata. Dopo la confisca definitiva nel 2007, la cascina, precedentemente appartenente alla famiglia mafiosa Belfiore, è stata liberata e destinata a uso sociale. Questo bene è diventato un simbolo della lotta alle mafie nel Nord Italia, dedicato alla memoria di Bruno Caccia, Procuratore di Torino ucciso nel 1983 per ordine di Domenico Belfiore, capo della ‘ndrangheta locale.
+                            </p>
+                            <p class="lang justified" data-lang="en">
+                                The history of Cascina Caccia is a testament to victory against organized crime. After its final confiscation in 2007, the farmhouse, which previously belonged to the Belfiore mafia family, was freed and designated for social use. This asset has become a symbol of the fight against the mafia in Northern Italy, dedicated to the memory of Bruno Caccia, the Turin prosecutor who was murdered in 1983 on the orders of Domenico Belfiore, head of the local ‘ndrangheta.
+                            </p>
+                            <p class="lang justified" data-lang="nl">
+                                De geschiedenis van Cascina Caccia is een getuigenis van de overwinning op de georganiseerde misdaad. Na de definitieve confiscatie in 2007 werd de boerderij, die voorheen toebehoorde aan de maffiafamilie Belfiore, bevrijd en bestemd voor sociaal gebruik. Dit bezit is een symbool geworden van de strijd tegen de maffia in Noord-Italië en is opgedragen aan de nagedachtenis van Bruno Caccia, de procureur van Turijn die in 1983 werd vermoord in opdracht van Domenico Belfiore, het hoofd van de lokale ‘ndrangheta.
+                            </p>
+                            <p class="lang justified" data-lang="it">
+                                Abbiamo scelto di festeggiare il nostro matrimonio qui, non solo per sostenere le azioni sociali che la cascina porta avanti, ma anche perchè sentiamo che questo luogo ci rappresenta: a cascina caccia si fanno molte attività educative per avvicinare i giovani all’amore per la natura e ai valori di giustizia e libertà, valori che abbiamo condiviso negli scout CNGEI, dove ci siamo conosciuti.
+                            </p>
+                            <p class="lang justified" data-lang="en">
+                                We chose to celebrate our marriage here, not only to support the social initiatives that the farmhouse carries forward but also because we feel that this place represents us. At Cascina Caccia, many educational activities are organized to bring young people closer to a love for nature and to the values of justice and freedom—values we shared as members of the CNGEI scouts, where we first met.
+                            </p>
+                            <p class="lang justified" data-lang="nl">
+                                Wij hebben ervoor gekozen om hier ons huwelijk te vieren, niet alleen om de sociale initiatieven te steunen die de boerderij voortzet, maar ook omdat wij voelen dat deze plek ons vertegenwoordigt. Bij Cascina Caccia worden veel educatieve activiteiten georganiseerd om jongeren dichter bij de liefde voor de natuur en de waarden van rechtvaardigheid en vrijheid te brengen – waarden die wij hebben gedeeld bij de CNGEI-scouts, waar wij elkaar hebben leren kennen.
+                            </p>
+                            <p class="lang justified" data-lang="it">
+                                E poi si trova tra le colline in cui abbiamo scelto di costruire la nostra vita insieme!
+                            </p>
+                            <p class="lang justified" data-lang="en">
+                                And besides, it is nestled among the very hills where we have chosen to build our life together!
+                            </p>
+                            <p class="lang justified" data-lang="nl">
+                                En bovendien ligt het tussen de heuvels waar wij ervoor hebben gekozen om samen ons leven op te bouwen!
+                            </p>
+                        </div>
+                        <button id="cascina_caccia_it" type="button" data-lang="it"
+                                class="lang btn-wedding btn col-12 offset-md-3 col-md-6 offset-lg-4 col-lg-4">
+                            Scopri Cascina Caccia
+                        </button>
+                        <button id="cascina_caccia_en" type="button" data-lang="en"
+                                class="lang btn-wedding btn col-12 offset-md-3 col-md-6 offset-lg-4 col-lg-4">
+                            Discover Cascina Caccia
+                        </button>
+                        <button id="cascina_caccia_nl" type="button" data-lang="nl"
+                                class="lang btn-wedding btn col-12 offset-md-3 col-md-6 offset-lg-4 col-lg-4">
+                            Ontdek Cascina Caccia
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="parallax__layer parallax__layer-deep-back">
+        </div>
+    </section>
+    <section id="group-5" class="parallax__group">
+        <div class="parallax__layer parallax__layer-base">
+        </div>
+    </section>
+    <section id="outro" class="parallax__group outro_screen">
+        <footer class="centered">
+            <div class="container footer-container">
+                <p class="pblock lang" data-lang="it">
+                    Che bello!!!
+                </p>
+                <p class="pblock lang" data-lang="en">
+                    How beautiful!!!
+                </p>
+                <p class="pblock lang" data-lang="nl">
+                    Wat mooi!!!
+                </p>
+                <p class="pblock lang" data-lang="it">
+                    Non vediamo l’ora di festeggiare con voi!
+                </p>
+                <p class="pblock lang" data-lang="en">
+                    We can't wait to see you all!
+                </p>
+                <p class="pblock lang" data-lang="nl">
+                    Wij kunnen niet wachten om het met jullie te vieren!
+                </p>
+                <br>
+                <p class="pblock lang" data-lang="it">
+                    Grazie di tutto!!!
+                </p>
+                <br>
+                <p class="pblock lang" data-lang="en">
+                    Thanks for everything!!!
+                </p>
+                <p class="pblock lang" data-lang="nl">
+                    Bedankt voor alles!!!
+                </p>
+            </div>
+        </footer>
+    </section>
+</div>
 
-        <!--    Bootstrap JS inclusion    -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-        <!--    Htmx inclusion    -->
-        <script src="https://unpkg.com/htmx.org@2.0.3"></script>
-    </body>
+<!--    Bootstrap JS inclusion    -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<!--    Htmx inclusion    -->
+<script src="https://unpkg.com/htmx.org@2.0.3"></script>
+<script>
+    // Select your scrollable container
+    const container = document.querySelector('.parallax');
+
+    window.addEventListener('mousemove', (e) => {
+        // Calculate the width threshold (5vw)
+        const threshold = window.innerWidth * 0.03;
+        // marker.style.right = threshold + "px";
+
+        // If the mouse is within the right threshold, show the scrollbar
+        if (window.innerWidth - e.clientX < threshold) {
+            console.log(" CALLALLAKALKLAK  ");
+            container.classList.add('show-scrollbar');
+        } else {
+            console.log(" Other ddddldld  ");
+            container.classList.remove('show-scrollbar');
+        }
+    });
+</script>
+<script>
+
+    // Funzionalità cambio lingua
+    let currentLang = 'it';
+    function updateLanguage() {
+        document.querySelectorAll('.lang').forEach(el => {
+            el.style.display = (el.getAttribute('data-lang') === currentLang) ? '' : 'none';
+        });
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.classList.toggle('active', btn.getAttribute('data-lang') === currentLang);
+        });
+    }
+    document.getElementById('btn-it').addEventListener('click', () => {
+        currentLang = 'it';
+        updateLanguage();
+    });
+    document.getElementById('btn-en').addEventListener('click', () => {
+        currentLang = 'en';
+        updateLanguage();
+    });
+    document.getElementById('btn-nl').addEventListener('click', () => {
+        currentLang = 'nl';
+        updateLanguage();
+    });
+    updateLanguage();
+</script>
+
+<script>
+    document.getElementById('confirm-btn').addEventListener('click', () => {
+        window.open('https://forms.gle/rsTqrnBwjFWSq3PE7', '_blank', 'noopener,noreferrer');
+    });
+    document.getElementById('cascina_caccia_it').addEventListener('click', () => {
+        window.open('https://cascinacaccia.net/', '_blank', 'noopener,noreferrer');
+    });
+    document.getElementById('cascina_caccia_en').addEventListener('click', () => {
+        window.open('https://cascinacaccia.net/', '_blank', 'noopener,noreferrer');
+    });
+    document.getElementById('cascina_caccia_nl').addEventListener('click', () => {
+        window.open('https://cascinacaccia.net/', '_blank', 'noopener,noreferrer');
+    });
+</script>
+
+<script src="javascript/event_listeners.js"></script>
+<script src="javascript/animation_options.js"></script>
+<script src="javascript/animation.js"></script>
+<script>
+
+    // Usage
+    // const parallaxContainer = document.querySelector('.parallax');
+    // const targetLayer = document.querySelector('.preface-container'); // Adjust to the layer you want to fade
+    const parallaxContainer = document.querySelector('.parallax');
+
+    const target1 = {
+        "target": document.querySelector('.preface-container'),
+        "options": {
+            fadeStartRatio: 1, // Adjust ratio for fade start
+            fadeEndRatio: 0,   // Adjust ratio for fade end
+            stopAnimation: null,
+            // easing: 'cubic-bezier(0.4, 0.7, 0.1, 1)',
+            // easing: 'ease-out',
+            easing: 'ease-out',
+            persistent: false,
+            animationDirection: 'both'
+        }
+    }
+    const target2 = {
+        "target": document.querySelector('.video-preface'),
+        "options": {
+            fadeStartRatio: 0.67, // Adjust ratio for fade start
+            fadeEndRatio: 0.1,   // Adjust ratio for fade end
+            stopAnimation: null,
+            // easing: 'cubic-bezier(0.4, 0.7, 0.1, 1)',
+            // easing: 'ease-out',
+            easing: 'linear',
+            persistent: false,
+            animationDirection: 'both'
+        }
+    }
+    const target3 = {
+        "target": document.querySelector('.video-container'),
+        "options": {
+            fadeStartRatio: 0.85, // Adjust ratio for fade start
+            fadeEndRatio: 0.2,   // Adjust ratio for fade end
+            stopAnimation: null,
+            // easing: 'cubic-bezier(0.4, 0.7, 0.1, 1)',
+            // easing: 'ease-out',
+            easing: 'linear',
+            persistent: false,
+            animationDirection: 'both'
+        }
+    }
+    const target4 = {
+        "target": document.querySelector('.conferma-container'),
+        "options": {
+            fadeStartRatio: -0.1, // Adjust ratio for fade start
+            fadeEndRatio: -(0.3),   // Adjust ratio for fade end
+            stopAnimation: null,
+            // easing: 'ease-in',
+            easing: 'linear',
+            persistent: false,
+            animationDirection: 'up'
+        }
+    }
+    const target5 = {
+        "target": document.querySelector('.location-container'),
+        "options": {
+            fadeStartRatio: 0.9, // Adjust ratio for fade start
+            fadeEndRatio: 0,   // Adjust ratio for fade end
+            stopAnimation: null,
+            // easing: 'ease-in',
+            easing: 'linear',
+            persistent: false,
+            animationDirection: 'down'
+        }
+    }
+    const targets = [
+        target1
+    ];
+    // ALTERNATIVE
+    parallaxContainer.addEventListener('scroll', throttle(
+        () => {
+            console.log('Scroll event triggered in parallax!');
+            console.log('Scroll Top:', parallaxContainer.scrollTop);
+            applyEffectToVisibleTargets(parallaxContainer, targets);
+        })
+    );
+</script>
+
+</body>
 </html>
 

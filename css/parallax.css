@@ -1,0 +1,235 @@
+.preface-container.hidden {
+    opacity: 0; /* Fades out when the class is added */
+    pointer-events: none; /* Disables interactions while hidden */
+}
+
+/*.preface-container {*/
+/*    will-change: transform, opacity;*/
+/*}*/
+
+/*  PARALLAX  */
+/* NEXT STEP !! */
+
+.parallax {
+    will-change: scroll-position; /* Helps Safari with scrolling calculations */
+    /*perspective: 300px;*/
+    perspective: 100px;
+    /*perspective: 1px;*/
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0;
+    /* Hide Scrollbar*/
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    .intro_screen {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        will-change: transform;
+    }
+    .outro_screen {
+        height: 100vh;
+        background-color: white;
+        background-blend-mode: screen;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .parallax__group {
+        position: relative;
+        height: 100vh;
+        transform-style: preserve-3d;
+        -webkit-transform-style: preserve-3d;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .parallax__layer {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /*scale(min) = 1 + ((translateZ * -1) / perspective);*/
+    .parallax__layer-back {
+        /*contain: paint;*/
+        transform: translateZ(-100px) scale(2);
+        -webkit-transform: translateZ(-100px) scale(2);
+    }
+    .parallax__layer-custom-back {
+        /*contain: paint;*/
+        transform: translateZ(-75px) scale(1.75);
+        -webkit-transform: translateZ(-75px) scale(1.75);
+    }
+    .parallax__layer-mid-back {
+        /*contain: paint;*/
+        transform: translateZ(-50px) scale(1.5);
+        -webkit-transform: translateZ(-50px) scale(1.5);
+    }
+    .parallax__layer-deep-back {
+        transform: translateZ(-200px) scale(3);
+        -webkit-transform: translateZ(-200px) scale(3);
+    }
+    .parallax__layer-base {
+        transform: translateZ(0);
+        -webkit-transform: translateZ(0);
+        /*-webkit-transform: translateZ(-1.3px) scale(2.3);*/
+    }
+    .parallax__layer-mid-foreground {
+        transform: translateZ(10px) scale(0.9);
+        -webkit-transform: translateZ(10px) scale(0.9);
+    }
+    .parallax__layer-foreground {
+        transform: translateZ(25px) scale(0.75);
+        -webkit-transform: translateZ(25px) scale(0.75);
+    }
+    .parallax__layer-top {
+        transform: translateZ(50px) scale(0.5);
+        -webkit-transform: translateZ(50px) scale(0.5);
+    }
+}
+
+#intro {
+    z-index: 10;
+    background-color: white;
+}
+
+#group-1 {
+    height: 200vh;
+    /*z-index: 5;*/
+    /*background-color: #51869c;*/
+
+    > .parallax__layer-custom-back {
+        transform: translateY(-45vh) translateZ(-75px) scale(1.75);
+        -webkit-transform: translateY(-45vh) translateZ(-75px) scale(1.75);
+        /*background-color: crimson;*/
+        /*background-image: url("../images/background3.jpg");*/
+        /*background-color: rgba(255, 255, 255, 0.82);*/
+        /*background-blend-mode: screen;*/
+    }
+
+    > .parallax__layer-deep-back {
+        transform: translateZ(-200px) scale(3);
+        -webkit-transform: translateZ(-200px) scale(3);
+        /*background-color: crimson;*/
+        background-image: url("../images/background3.jpg");
+        background-color: rgba(255, 255, 255, 0.82);
+        background-blend-mode: screen;
+        /*z-index: 1;*/
+    }
+    > .parallax__layer-mid-foreground {
+        transform: translateY(50vh); /* translateZ(10px) scale(0.9);*/
+        -webkit-transform: translateY(50vh);/* translateZ(10px) scale(0.9);*/
+    }
+    > .parallax__layer-foreground {
+        /*z-index: 5;*/
+        transform: translateY(50vh) translateZ(25px) scale(0.75);
+        -webkit-transform: translateY(50vh) translateZ(25px) scale(0.75);
+        /*background-color: midnightblue;*/
+        /*background-image: url("../images/background3.jpg");*/
+        /*background-color: rgba(255, 255, 255, 0.82);*/
+        /*background-blend-mode: screen;*/
+    }
+}
+/*.preface-container {*/
+/*    will-change: transform, opacity;*/
+/*}*/
+
+#group-2 {
+    height: 200vh;
+    /*z-index: 0;*/
+    /*background-color: coral;*/
+    /*background-image: url("../images/background3.jpg");*/
+    /*background-color: rgba(255, 255, 255, 0.82);*/
+    /*background-blend-mode: screen;*/
+    /*background: linear-gradient(352deg, #ffffffe5, #ffffffe5), linear-gradient(352deg, #618b67, #618b67);*/
+    /*background-size: cover;*/
+    > .parallax__layer-back {
+        transform: translateY(56vh) translateZ(-50px) scale(1.5);
+        -webkit-transform: translateY(56vh) translateZ(-50px) scale(1.5);
+    }
+    > .parallax__layer-base {
+        transform: translateY(20vh) translateZ(0);
+        -webkit-transform: translateY(20vh) translateZ(0);
+    }
+    > .parallax__layer-mid-foreground {
+        /*transform: translateY(12vh) translateZ(35px) scale(0.65);*/
+        /*-webkit-transform: translateY(12vh) translateZ(35px) scale(0.65);*/
+        /* THOSE OFFICIUALLY USED*/
+        /*transform: translateY(20vh) translateZ(20px) scale(0.8);*/
+        /*-webkit-transform: translateY(20vh) translateZ(20px) scale(0.8);*/
+        /*THOSE I DONT" KNWO*/
+        /*transform: translateY(12vh) translateZ(35px) scale(0.65);*/
+        /*-webkit-transform: translateY(12vh) translateZ(35px) scale(0.65);*/
+        /*transform: translateY(20vh) translateZ(20px) scale(0.8);*/
+        transform: translateY(20vh) translateZ(20px) scale(0.8);
+        -webkit-transform: translateY(-33vh) translateZ(20px) scale(0.8);
+    }
+    > .parallax__layer-top {
+        /*transform: translateY(-25vh) translateZ(50px) scale(0.5);*/
+        /*-webkit-transform: translateY(-25vh) translateZ(50px) scale(0.5);*/
+
+        transform: translateY(-70vh) translateZ(50px) scale(0.5);
+        -webkit-transform: translateY(-70vh) translateZ(50px) scale(0.5);
+    }
+}
+/*#group-2 > .parallax__layer-base {*/
+/*    background-color: yellowgreen;*/
+/*}*/
+/*#group-2 > .parallax__layer-top {*/
+/*    z-index: 6;*/
+/*    !*background-color: mediumpurple;*!*/
+/*}*/
+/*#group-2 > .parallax__layer-deep-back {*/
+/*    z-index: 2;*/
+/*    !*background-color: crimson;*!*/
+/*    !*background-image: url("../images/background3.jpg");*!*/
+/*    !*background-color: rgba(255, 255, 255, 0.82);*!*/
+/*    !*background-blend-mode: screen;*!*/
+/*}*/
+
+
+#group-3 {
+    > .parallax__layer-base {
+        transform: translateY(-20vh) translateZ(0);
+        -webkit-transform: translateY(-20vh) translateZ(0);
+    }
+    /*z-index: -1;*/
+    /*background-color: #618b67;*/
+}
+
+#group-4 {
+    height: 150vh;
+    z-index: -1;
+    /*background-image: url("../images/background3.jpg");*/
+    /*background-color: rgba(255,255,255,0.82);*/
+    /*background-blend-mode: screen;*/
+    > .parallax__layer-mid-back {
+        /*background-image: url("../images/background3.jpg");*/
+        /*background-color: rgba(255,255,255,0.82);*/
+        /*background-blend-mode: screen;*/
+    }
+    > .parallax__layer-deep-back {
+        background-image: url("../images/background3.jpg");
+        background-color: rgba(255,255,255,0.82);
+        background-blend-mode: screen;
+    }
+}
+
+#group-5 {
+    height: 50vh;
+    visibility: hidden;
+}
+
+#outro {
+    .parallax__layer-back {
+        background-color: grey;
+    }
+}
