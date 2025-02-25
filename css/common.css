@@ -246,7 +246,10 @@ a:active {
 .pblock {
     margin-bottom: 0;
 }
-
+.text-party {
+    margin-bottom: 0;
+    text-align: justify;
+}
 .schedule {
     margin-top: 20px;
 }
@@ -281,21 +284,31 @@ h2.iban-msg {
     margin-bottom: 40px;
 }
 .programma-container {
-    padding: 18vh 9vw 18vh 9vw;
+    padding: 14vh 9vw 14vh 9vw;
     background: white;
     background-size: cover;
 }
 .macchina-container {
-    padding: 60vh 9vw 15vh 9vw;
+    padding: 60vh 9vw 25vh 9vw;
     color: white;
     background: linear-gradient(352deg, #00000050, #00000000), linear-gradient(352deg, #618b67, #618b67);
     background-size: cover;
     h2 {
         margin-bottom: 20px;
     }
+    .parcheggio-container {
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        p {
+            overflow: hidden;
+            margin: 0;
+        }
+    }
 }
 .conferma-container {
-    padding: 30vh 9vw 40vh 9vw;
+    padding: 35vh 9vw 40vh 9vw;
     background: white;
     background-size: cover;
 }
