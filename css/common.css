@@ -37,9 +37,7 @@ footer {
 }
 
 a:link {
-    /*color: #51869c;*/
-    /*color: #8B6185;*/
-    color: white;
+    color: #7CA381;
 }
 
 a:visited {
@@ -47,8 +45,7 @@ a:visited {
 }
 
 a:hover {
-    /*color: #9f6644;*/
-    color: #13ec5b;
+    color: #974c22;
 }
 
 a:active {
@@ -56,19 +53,21 @@ a:active {
 }
 /*colors*/
 /*Green Used*/
-/*#618b67*/
+/*color: #618b67;*/
 /*Complementary*/
-/*#8B6185*/
+/*color: #8B6185;*/
 /*Monochromatic*/
-/*#7CA381*/
+/*color: #7CA381;*/
 /*Analogous*/
-/*#618B7C*/
-/*#708B61*/
+/*color: #618B7C;*/
+/*color: #708B61;*/
 /*Triadic*/
-/*#67618B*/
-/*#8B6761*/
+/*color: #67618B;*/
+/*color: #8B6761;*/
 /*Tetriadic by adding*/
-/*#8B6185*/
+/*color: #8B6185;*/
+/*Shockingly different*/
+/*color: #13ec5b;*/
 
 
 
@@ -199,6 +198,9 @@ a:active {
     height: 25vh;
     overflow: hidden;
 }
+.preface-container {
+    will-change: transform, opacity;
+}
 .video-container {
     margin-top: 25px;
     position: relative;
@@ -301,9 +303,24 @@ h2.iban-msg {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        overflow: hidden;
         p {
-            overflow: hidden;
             margin: 0;
+        }
+        a:link {
+            color: #13ec5b;
+        }
+
+        a:visited {
+            color: #7CAF81;
+        }
+
+        a:hover {
+            color: #d0ffd0;
+        }
+
+        a:active {
+            color: #618b67;
         }
     }
 }

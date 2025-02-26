@@ -15,9 +15,7 @@ function calculateOpacity(fadeStart, fadeEnd, offset, options = {}) {
         fadeOpacity = applyStopAnimation(fadeStart, fadeEnd, offset, options);
     }
     if (animationDirection) {
-        console.log('animationDirection', animationDirection);
         fadeOpacity = applyAnimationDirection(fadeStart, fadeEnd, offset, options);
-        console.log('fadeOpacity', fadeOpacity);
     }
     return fadeOpacity;
 }

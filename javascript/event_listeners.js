@@ -2,7 +2,6 @@
 function isElementInViewport(target) {
     const rect = target.getBoundingClientRect();
     if (rect.bottom < 0) {
-        // console.log("Element is above the viewport");
         return false;
     }
     return (
