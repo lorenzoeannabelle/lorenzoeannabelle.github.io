@@ -291,12 +291,12 @@ h2.iban-msg {
     margin-bottom: 40px;
 }
 .programma-container {
-    padding: 14vh 9vw 14vh 9vw;
+    padding: 22vh 9vw 22vh 9vw;
     background: white;
     background-size: cover;
 }
 .macchina-container {
-    padding: 50vh 9vw 25vh 9vw;
+    padding: 50vh 9vw 50vh 9vw;
     color: white;
     background: linear-gradient(352deg, #00000050, #00000000), linear-gradient(352deg, #618b67, #618b67);
     background-size: cover;
@@ -337,6 +337,7 @@ h2.iban-msg {
 
 .regalo-container {
     color: white;
+    padding: 25vh 0;
     background: linear-gradient(352deg, #00000000, #00000050), linear-gradient(352deg, #618b67, #618b67);
     margin-top: 2vh;
     margin-bottom: 4vh;

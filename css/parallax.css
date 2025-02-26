@@ -102,8 +102,9 @@
         background-blend-mode: screen;
     }
     > .parallax__layer-mid-foreground {
-        transform: translateY(50vh);
-        -webkit-transform: translateY(50vh);
+        height: 100vh;
+        transform: translateY(50vh) translateY(50vh);
+        -webkit-transform: translateY(50vh) translateY(50vh);
     }
     > .parallax__layer-foreground {
         transform: translateY(50vh) translateZ(25px) scale(0.75);
@@ -112,7 +113,7 @@
 }
 
 #group-2 {
-    height: 200vh;
+    height: 250vh;
     > .parallax__layer-back {
         transform: translateY(56vh) translateZ(-50px) scale(1.5);
         -webkit-transform: translateY(56vh) translateZ(-50px) scale(1.5);
@@ -122,12 +123,14 @@
         -webkit-transform: translateY(20vh) translateZ(0);
     }
     > .parallax__layer-mid-foreground {
-        transform: translateY(-33vh) translateZ(20px) scale(0.8);
-        -webkit-transform: translateY(-33vh) translateZ(20px) scale(0.8);
+        height: 50vh;
+        transform: translateY(63vh) translateZ(20px) scale(0.8);
+        -webkit-transform: translateY(63vh) translateZ(20px) scale(0.8);
     }
     > .parallax__layer-top {
-        transform: translateY(-70vh) translateZ(50px) scale(0.5);
-        -webkit-transform: translateY(-70vh) translateZ(50px) scale(0.5);
+        height: 100vh;
+        transform: translateY(-20vh) translateZ(50px) scale(0.5);
+        -webkit-transform: translateY(-20vh) translateZ(50px) scale(0.5);
     }
 }
 
