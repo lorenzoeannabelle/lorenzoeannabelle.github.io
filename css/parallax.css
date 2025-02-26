@@ -99,6 +99,7 @@
         -webkit-transform: translateZ(-200px) scale(3);
         background-image: url("../images/background3.jpg");
         background-color: rgba(255, 255, 255, 0.82);
+        -webkit-background-blend-mode: screen;
         background-blend-mode: screen;
     }
     > .parallax__layer-mid-foreground {
@@ -151,6 +152,7 @@
     > .parallax__layer-deep-back {
         background-image: url("../images/background3.jpg");
         background-color: rgba(255,255,255,0.82);
+        -webkit-background-blend-mode: screen;
         background-blend-mode: screen;
     }
 }
@@ -166,6 +168,7 @@
     > .parallax__layer-deep-back {
         background-image: url("../images/background3.jpg");
         background-color: rgba(255,255,255,0.82);
+        -webkit-background-blend-mode: screen;
         background-blend-mode: screen;
     }
 }

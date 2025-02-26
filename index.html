@@ -386,9 +386,7 @@
 
         <!--    Bootstrap JS inclusion    -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-        <!--    Htmx inclusion    -->
-        <script src="https://unpkg.com/htmx.org@2.0.3"></script>
+        <!--    Scrollbar hide/show    -->
         <script>
             // Select your scrollable container
             const container = document.querySelector('.parallax');
@@ -406,6 +404,7 @@
                 }
             });
         </script>
+        <!--    Change language -->
         <script>
 
             // Funzionalità cambio lingua
@@ -432,7 +431,7 @@
             });
             updateLanguage();
         </script>
-
+        <!--    Buttons redirects        -->
         <script>
             document.getElementById('confirm-btn').addEventListener('click', () => {
                 window.open('https://forms.gle/rsTqrnBwjFWSq3PE7', '_blank', 'noopener,noreferrer');
@@ -447,7 +446,7 @@
                 window.open('https://cascinacaccia.net/', '_blank', 'noopener,noreferrer');
             });
         </script>
-
+        <!--    Throttle function for scroll event    -->
         <script src="javascript/event_listeners.js"></script>
         <script src="javascript/animation_options.js"></script>
         <script src="javascript/animation.js"></script>
