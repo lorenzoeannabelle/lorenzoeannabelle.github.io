@@ -3,7 +3,10 @@
 /*@media only screen and (max-device-width: 767px) and (orientation: landscape) */
 /*@media only screen and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2),*/
 /*only screen and (orientation: landscape) and (min-resolution: 192dpi) {*/
-@media only screen and (max-device-width: 767px) and (orientation: landscape) {
+/*@media only screen and (max-device-width: 767px) and (orientation: landscape) {*/
+@media only screen and (max-device-width: 1290px) and (orientation: landscape),
+       only screen and (max-width: 1290px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+
     .video-container {
         margin-top: 25px;
         position: relative;
@@ -128,8 +131,13 @@
     }
 }
 
-@media not all and (max-device-width: 767px) {
+/*@media not all and (max-device-width: 1080px) {*/
+/*@media not all and (max-device-width: 1102px) and (orientation: landscape),*/
+/*       not all and (max-width: 1102px) and (orientation: landscape),*/
+/*       not all and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {*/
 
+@media only screen and (min-device-width: 1291px) and (orientation: landscape),
+       only screen and (min-width: 1290px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
     .programma-container {
         padding: 25vh 9vw 25vh 9vw;
         .center-img {
