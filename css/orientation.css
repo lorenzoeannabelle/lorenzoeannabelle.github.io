@@ -72,24 +72,30 @@
             background-blend-mode: screen;
         }
         > .parallax__layer-mid-foreground {
-            transform: translateY(50vh);
-            -webkit-transform: translateY(50vh);
+            height: 100vh;
+            transform: translateY(160vh);
+            -webkit-transform: translateY(160vh);
         }
     }
 
     #group-2 {
-        height: 300vh;
+        height: 450vh;
         > .parallax__layer-mid-foreground {
             height: 50vh;
-            transform: translateY(95vh) translateZ(20px) scale(0.8);
-            -webkit-transform: translateY(95vh) translateZ(20px) scale(0.8);
+            transform: translateY(135vh) translateZ(20px) scale(0.8);
+            -webkit-transform: translateY(135vh) translateZ(20px) scale(0.8);
         }
         > .parallax__layer-top {
-            transform: translateY(-120vh) translateZ(50px) scale(0.5);
-            -webkit-transform: translateY(-120vh) translateZ(50px) scale(0.5);
+            height: 100vh;
+            transform: translateZ(50px) scale(0.5);
+            -webkit-transform: translateZ(50px) scale(0.5);
+        }
+        > .parallax__layer-back {
+            transform: translateY(70vh) translateZ(-50px) scale(1.5);
+            -webkit-transform: translateY(70vh) translateZ(-50px) scale(1.5);
         }
         .macchina-container {
-            padding: 25vh 9vw 25vh 9vw;
+            padding: 33vh 9vw 33vh 9vw;
         }
     }
 
@@ -103,13 +109,13 @@
     #group-4 {
         height: 150vh;
         > .parallax__layer-mid-back {
-            transform: translateY(150vh) translateZ(-50px) scale(1.5);
-            -webkit-transform: translateY(150vh) translateZ(-50px) scale(1.5);
+            transform: translateY(290vh) translateZ(-50px) scale(1.5);
+            -webkit-transform: translateY(290vh) translateZ(-50px) scale(1.5);
         }
     }
 
     #group-5 {
-        height: 250vh;
+        height: 400vh;
         visibility: hidden;
     }
 }

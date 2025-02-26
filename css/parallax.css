@@ -168,6 +168,7 @@
 }
 
 #outro {
+    will-change: transform;
     .parallax__layer-back {
         background-color: grey;
     }
